@@ -16,6 +16,11 @@ import { HeaderComponent } from './components/header/header.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, ProfileCardComponent, HeaderComponent]
+  declarations: [
+    
+    HomePage, 
+    ProfileCardComponent, 
+    HeaderComponent,
+  ]
 })
 export class HomePageModule {}
