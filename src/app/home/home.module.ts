@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -15,6 +16,6 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, ProfileCardComponent]
+  declarations: [HomePage, ProfileCardComponent, HeaderComponent]
 })
 export class HomePageModule {}
