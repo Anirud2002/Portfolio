@@ -1,7 +1,7 @@
 <ion-card class="big-card">
   <ion-card-header class="ion-no-padding ion-no-margin">
     <ion-item lines="none">
-      <ion-button slot="end" title="share portfolio" fill="clear" class="gray">
+      <ion-button slot="end" title="share portfolio" fill="clear" class="gray" (click)="copyPortfolioLink()">
         <ion-icon size="small" name="share-outline"></ion-icon>
       </ion-button>
     </ion-item>
@@ -31,13 +31,13 @@
     <div>
       <ion-item lines="none">
         <ion-buttons slot="end">
-          <ion-button>
+          <ion-button target="_blank" href="https://github.com/Anirud2002">
             <ion-icon name="logo-github"></ion-icon>
           </ion-button>
-          <ion-button>
+          <ion-button target="_blank" href="https://www.linkedin.com/in/anirud-shrestha/">
             <ion-icon name="logo-linkedin"></ion-icon>
           </ion-button>
-          <ion-button>
+          <ion-button target="_blank" href="https://twitter.com/AnirudStha">
             <ion-icon name="logo-twitter"></ion-icon>
           </ion-button>
         </ion-buttons>

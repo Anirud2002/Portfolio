@@ -29,3 +29,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ion-toast.custom-toast {
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: #ffffff;
+    --end: 10px
+    --width: 350px;
+    --min-width: 350px;
+    --max-width: 350px;
+  }
