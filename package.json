@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "@capacitor/clipboard": "^5.0.6",
+    "@capacitor/preferences": "^5.0.6",
     "@ionic/angular": "^7.0.0",
     "angular-cli-ghpages": "^1.0.6",
     "ionicons": "^7.0.0",
