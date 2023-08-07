@@ -10,18 +10,18 @@ import { ToastController } from '@ionic/angular';
 export class ProfileCardComponent  implements OnInit {
 
   constructor(
-    private toastController: ToastController
+    private toastController: ToastController,
   ) { }
 
   ngOnInit() {}
 
   async copyPortfolioLink() {
     await Clipboard.write({
-      string: "https://anirud2002.github.io/Portfolio/"
+      string: window.location.href
     });
 
     const toast = await this.toastController.create({
-      message: "Porfolio Link Copied!",
+      message: "Porfolio Link Copied,  Share it! :)",
       duration: 2000,
       position: "top",
       cssClass: "custom-toast",
