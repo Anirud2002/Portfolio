@@ -6,20 +6,20 @@
       </ion-button>
     </ion-item>
 
-    <ion-card-title class="ion-padding-horizontal">
-      <ion-item lines="none">
-        <ion-thumbnail slot="start">
-          <ion-img alt="Profile Pic" src="../../../../assets/my_pic.JPG"></ion-img>
-        </ion-thumbnail>
-        <ion-label>
-          <h1 style="font-weight: 700;">Anirud Shrestha</h1>
-          <p>Student Developer @ Boise State</p>
-        </ion-label>
-      </ion-item>
-    </ion-card-title>
+    
   </ion-card-header>
   
   <ion-card-content>
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <ion-img alt="Profile Pic" src="../../../../assets/my_pic.JPG"></ion-img>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h1 style="font-weight: 700;">Anirud Shrestha</h1>
+        <p>Student Developer @ Boise State</p>
+      </ion-label>
+    </ion-item>
+
     <div class="flex items-center justify-center">
       <ion-item lines="none">
         <ion-label>
@@ -28,20 +28,20 @@
       </ion-item>
     </div>
 
-    <div>
-      <ion-item lines="none">
+    <div class="w-fit flex justify-center items-center mx-auto sm:ml-auto sm:mx-0">
+      <!-- <ion-item lines="none"> -->
         <ion-buttons slot="end">
-          <ion-button target="_blank" href="https://github.com/Anirud2002">
+          <ion-button color="dark" target="_blank" href="https://github.com/Anirud2002">
             <ion-icon name="logo-github"></ion-icon>
           </ion-button>
-          <ion-button target="_blank" href="https://www.linkedin.com/in/anirud-shrestha/">
+          <ion-button color="dark" target="_blank" href="https://www.linkedin.com/in/anirud-shrestha/">
             <ion-icon name="logo-linkedin"></ion-icon>
           </ion-button>
-          <ion-button target="_blank" href="https://twitter.com/AnirudStha">
+          <ion-button color="dark" target="_blank" href="https://twitter.com/AnirudStha">
             <ion-icon name="logo-twitter"></ion-icon>
           </ion-button>
         </ion-buttons>
-      </ion-item>
+      <!-- </ion-item> -->
     </div>
   </ion-card-content>
 </ion-card>
