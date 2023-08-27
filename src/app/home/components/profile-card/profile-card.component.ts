@@ -24,6 +24,7 @@ export class ProfileCardComponent  implements OnInit {
       message: "Porfolio Link Copied,  Share it! :)",
       duration: 2000,
       position: "top",
+      color: "dark",
       cssClass: "custom-toast",
     });
 
