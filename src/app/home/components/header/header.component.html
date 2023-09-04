@@ -1,6 +1,6 @@
 <div>
   <ion-item lines="none">
     <ion-label slot="end">Dark mode</ion-label>
-    <ion-toggle slot="end" class="mr-8" [checked]="theme === 'dark'" (ionChange)="setNewTheme($event)"></ion-toggle>
+    <ion-toggle mode="ios" slot="end" class="mr-8" [checked]="theme === 'dark'" (ionChange)="setNewTheme($event)"></ion-toggle>
   </ion-item>
 </div>
