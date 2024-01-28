@@ -26,7 +26,7 @@ export class ProjectsComponent  implements OnInit {
     },
     {
       title: "Assignment Calculator",
-      description: "An app that reminds you to do the things when you are near a location you've set.",
+      description: "New BSU App that gives resources on a particular type of assignment to the students and help them get done by the due date.",
       technologies: ["angular", "ionic", "c-sharp", "aws"],
       link: "https://assignment-calculator.boisestate.edu/home",
       associatedWith: "Boise State University",
@@ -34,7 +34,7 @@ export class ProjectsComponent  implements OnInit {
     },
     {
       title: "TimeToFocus",
-      description: "An study timer app which follows pomodoro techinique and has different configuration.",
+      description: "An study timer app which follows pomodoro techinique and has different configurations.",
       technologies: ["react", "mongoDB", "node", "express"],
       githubLink: "https://github.com/Anirud2002/timetofocus",
       link: "https://time-to-focus.netlify.app/",

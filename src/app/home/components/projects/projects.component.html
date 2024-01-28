@@ -1,16 +1,16 @@
 <!-- <h1 class="flex justify-center font-semibold text-3xl mt-4">PROJECTS</h1> -->
 
-<ion-grid class="mt-4">
+<ion-grid class="mt-4 ion-no-padding">
   <ion-row class="ion-justify-content-center">
     <ion-col *ngFor="let project of projects" size="12" sizeMd="6" sizeXl="5">
       <ion-card class="relative">
-        <ion-card-title class="ion-padding">{{project.title}}</ion-card-title>
-        <ion-card-subtitle *ngIf="project.associatedWith" class="ion-padding-horizontal">Associated with: {{project.associatedWith}}</ion-card-subtitle>
+        <ion-card-title class="ion-padding flex items-center space-x-4">
+          <p>{{project.title}}</p>
 
-        <div class="github-link absolute top-4 right-4 flex space-x-2">
           <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-          <a [href]="project.link" target="_blank"><ion-icon name="open-outline" [href]="project.link" ></ion-icon></a>
-        </div>
+          <a [href]="project.link" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+        </ion-card-title>
+        <ion-card-subtitle *ngIf="project.associatedWith" class="ion-padding-horizontal">Associated with: {{project.associatedWith}}</ion-card-subtitle>
 
         <ion-card-content>
           <div class="stack flex items-center space-x-2 mb-4">
