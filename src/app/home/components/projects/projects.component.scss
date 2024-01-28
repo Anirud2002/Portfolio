@@ -1,0 +1,14 @@
+.stack {
+    img {
+        width: 30px;
+    }
+}
+
+ion-card {
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+ion-card:hover {
+    transform: scale(1.1);
+}

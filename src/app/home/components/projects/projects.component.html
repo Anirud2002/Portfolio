@@ -1,0 +1,29 @@
+<h1 class="flex justify-center font-semibold text-3xl mt-4">PROJECTS</h1>
+
+<ion-grid class="mt-4">
+  <ion-row class="ion-justify-content-center">
+    <ion-col *ngFor="let project of projects" size="12" sizeMd="6" sizeXl="5">
+      <ion-card class="relative">
+        <ion-card-title class="ion-padding">{{project.title}}</ion-card-title>
+        <ion-card-subtitle *ngIf="project.associatedWith" class="ion-padding-horizontal">Associated with: {{project.associatedWith}}</ion-card-subtitle>
+
+        <div class="github-link absolute top-4 right-4 flex space-x-2">
+          <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          <a [href]="project.link" target="_blank"><ion-icon name="open-outline" [href]="project.link" ></ion-icon></a>
+        </div>
+
+        <ion-card-content>
+          <div class="stack flex items-center space-x-2 mb-4">
+            <img *ngFor="let tech of project.technologies" [src]="'../../../../assets/' + tech + '.png'" [alt]="tech" srcset="">
+          </div>
+
+          <ion-text>
+            <p>
+              {{project.description}}
+            </p>
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

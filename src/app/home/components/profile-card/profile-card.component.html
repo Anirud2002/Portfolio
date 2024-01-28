@@ -1,53 +1,59 @@
-<ion-card class="w-auto max-w-xl mx-auto">
-  <ion-card-header class="ion-no-padding ion-no-margin">
-    <ion-item lines="none">
-      <ion-button slot="end" title="share portfolio" fill="clear" class="gray" (click)="copyPortfolioLink()">
-        <ion-icon size="small" name="share-outline"></ion-icon>
-      </ion-button>
-    </ion-item>
-  </ion-card-header>
-  
-  <ion-card-content>
-    <ion-grid>
-      <ion-row class="ion-align-items-center ion-justify-content-center">
-        <ion-col sizeXs="12" sizeSm="4" class="flex justify-center">
-          <ion-thumbnail>
-            <ion-img alt="Profile Pic" src="../../../../assets/my_pic.JPG"></ion-img>
-          </ion-thumbnail>
-        </ion-col>
-        <ion-col sizeXs="12" sizeSm="8" class="flex justify-center sm:justify-normal ion-no-padding">
-          <ion-item lines="none" class="w-full">
-            <ion-label class="ion-text-wrap text-center sm:text-left">
-              <h1 style="font-weight: 700;">Anirud Shrestha</h1>
-              <p>Student Developer @ Boise State</p>
-            </ion-label>
+<ion-grid>
+  <ion-row>
+    <ion-col size="12" sizeSm="10" sizeMd="8" sizeLg="6" offsetSm="1" offsetMd="2" sizeXl="6" offsetLg="3" offsetXl="3">
+      <ion-card class="w-auto max-w-xl mx-auto">
+        <ion-card-header class="ion-no-padding ion-no-margin">
+          <ion-item lines="none">
+            <ion-button slot="end" title="share portfolio" fill="clear" class="gray" (click)="copyPortfolioLink()">
+              <ion-icon size="small" name="share-outline"></ion-icon>
+            </ion-button>
           </ion-item>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+        </ion-card-header>
+        
+        <ion-card-content>
+          <ion-grid>
+            <ion-row class="ion-align-items-center ion-justify-content-center">
+              <ion-col sizeXs="12" sizeSm="4" class="flex justify-center">
+                <ion-thumbnail>
+                  <ion-img alt="Profile Pic" src="../../../../assets/my_pic.JPG"></ion-img>
+                </ion-thumbnail>
+              </ion-col>
+              <ion-col sizeXs="12" sizeSm="8" class="flex justify-center sm:justify-normal ion-no-padding">
+                <ion-item lines="none" class="w-full">
+                  <ion-label class="ion-text-wrap text-center sm:text-left">
+                    <h1 style="font-weight: 700;">Anirud Shrestha</h1>
+                    <p>Student Developer @ Boise State</p>
+                  </ion-label>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
 
-    <div class="flex items-center justify-center">
-      <ion-item lines="none">
-        <ion-label>
-          <h3 style="font-weight: 500;">CS Student | Sophomore | Boise</h3>
-        </ion-label>
-      </ion-item>
-    </div>
+          <div class="flex items-center justify-center">
+            <ion-item lines="none">
+              <ion-label>
+                <h3 style="font-weight: 500;">CS Student | Junior | Boise</h3>
+              </ion-label>
+            </ion-item>
+          </div>
 
-    <div class="w-fit flex justify-center items-center mx-auto sm:ml-auto sm:mx-0">
-      <!-- <ion-item lines="none"> -->
-        <ion-buttons slot="end">
-          <ion-button color="dark" target="_blank" href="https://github.com/Anirud2002">
-            <ion-icon name="logo-github"></ion-icon>
-          </ion-button>
-          <ion-button color="dark" target="_blank" href="https://www.linkedin.com/in/anirud-shrestha/">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </ion-button>
-          <ion-button color="dark" target="_blank" href="https://twitter.com/AnirudStha">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      <!-- </ion-item> -->
-    </div>
-  </ion-card-content>
-</ion-card>
+          <div class="w-fit flex justify-center items-center mx-auto sm:ml-auto sm:mx-0">
+            <!-- <ion-item lines="none"> -->
+              <ion-buttons slot="end">
+                <ion-button color="dark" target="_blank" href="https://github.com/Anirud2002">
+                  <ion-icon name="logo-github"></ion-icon>
+                </ion-button>
+                <ion-button color="dark" target="_blank" href="https://www.linkedin.com/in/anirud-shrestha/">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </ion-button>
+                <ion-button color="dark" target="_blank" href="https://twitter.com/AnirudStha">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            <!-- </ion-item> -->
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
