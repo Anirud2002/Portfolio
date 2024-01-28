@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  currentSegment: string = "about";
   constructor() {}
+
+  handleSegmentChange(e: CustomEvent) {
+    const {value} = e.detail;
+    this.currentSegment = value;
+  }
 
 }

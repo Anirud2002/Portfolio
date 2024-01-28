@@ -1,5 +1,21 @@
 <ion-content fullscreen="true">
     <app-header></app-header>    
     <app-profile-card></app-profile-card>
-    <app-projects></app-projects>
+
+    <ion-segment value="about" (ionChange)="handleSegmentChange($event)">
+        <ion-segment-button value="about">
+            <ion-label>About Me</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="projects">
+            <ion-label>Projects</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="experience">
+            <ion-label>Experience</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+    <app-about-me *ngIf="currentSegment==='about'"></app-about-me>
+    <app-projects *ngIf="currentSegment==='projects'"></app-projects>
+    <app-experience *ngIf="currentSegment==='experience'"></app-experience>
+    
 </ion-content>

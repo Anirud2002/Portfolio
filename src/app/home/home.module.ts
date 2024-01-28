@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
     HomePage, 
     ProfileCardComponent, 
     HeaderComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent,
+    ExperienceComponent
   ]
 })
 export class HomePageModule {}
